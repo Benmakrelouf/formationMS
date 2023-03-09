@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiche technique</title>
+  <style>
+    body{
+      box-shadow: 1px 6px 17px;
+      margin-right: 35%;
+      margin-left: 35%;
+      margin-top: 10%;
+      padding-top: 10%;
+      padding-bottom: 10%;
+    }
+  </style>
+  <script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
+</head>
+<body>
+
+  <div id="Page1">
+   <form> 
+    <table align="center"><h1>Informations générales</h1>
+      <tr>
+        <td align="right">WILAYA</td>
+        <td ><input type="text", name="WILAYA", placeholder="Votre wilaya" > </td>
+      </tr>
+      <tr>
+        <td align="right">Etablissement</td>
+        <td><input type="text", name="INFP" , placeholder="INFP"> </td>
+      </tr>
+      <tr>
+        <td align="right">Capacité</td>
+        <td><input type="number", name="Capacité" , value="0", min="0", placeholder="La capacité..."> </td>
+      </tr>
+      <tr>
+        <td align="right">Siège(Adresse)</td>
+        <td><input type="text", name="Adresse" , multiple ,placeholder="Adresse"> </td>
+      </tr>
+      <tr>
+        <td align="right">Mot de passe</td>
+        <td><input type="password", name="password" , placeholder="Mot de passe" ,placeholder="Email"> </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit", name="discription", value="Valider"> </td>
+      </tr>
+    </table>
+  </form>
+    <a href="#" onclick="return show('Page2','Page1');">voir la page suivante</a>
+  </div>
+  <div id="Page2" style="display:none">
+    Content of page 2 
+    <br></br>
+    <a href="#" onclick="return show('Page1','Page2');"> Revoir la page 'Informations générales'</a>
+    <br></br>
+    <a href="Merci.html"> Fin du processus </a> 
+  </div>
+
+</body>
+</html>

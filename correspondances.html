@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+<!----- Correspondances avec la tutelle---->
+
+          <div class="correspondances.boite">
+               <h2> Contactez-nous à travers ce portail  </h2>
+              
+<fieldset>
+               <form class="correspondances", action="/upload" method="post" enctype="multipart/form-data">
+               
+               <!----- Je dois choisir entre les deux styles---->
+
+               <input type="text" placeholder="Objet du message" required> 
+               <textarea name="Adresse" maxlength="140" rows="5" placeholder="Taper votre message ici" required></textarea>   
+               
+               <!----- Téléchargement d'un fichier---->
+               <label for="file"></label>
+               <input type="file" id="file" name="myFile">
+               <!----- bouton de validation de la requete---->
+                    <button type="submit"> <span> Envoyer </span> </button>
+
+               </form>
+               
+          
+</form>
+
+</fieldset>
+
+          </div>    
+
+</body>
+
+
+
+
+
+</html>
